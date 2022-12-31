@@ -1,0 +1,84 @@
+================================================================================
+MGWR Version: 2.2.1
+Released on: 03/20/2020
+Source code is available at: https://github.com/pysal/mgwr
+Development Team: Ziqi Li, Taylor Oshan, Stewart Fotheringham, Wei Kang, 
+Levi Wolf, Hanchen Yu, Mehak Sachdeva, and Sarah Bardin
+Spatial Analysis Research Center (SPARC)
+Arizona State University, Tempe, USA
+================================================================================
+Model type:                                                             Gaussian
+Number of observations:                                                       39
+Number of covariates:                                                         11
+Dependent variable:                                                         SIGP
+Variable standardization:                                                     On
+Total runtime:                                                           0:00:00
+
+Global Regression Results
+--------------------------------------------------------------------------------
+Residual sum of squares:                                                   8.079
+Log-likelihood:                                                          -24.641
+AIC:                                                                      71.281
+AICc:                                                                     85.281
+R2:                                                                        0.793
+Adj. R2:                                                                   0.719
+
+Variable                                   Est.         SE  t(Est/SE)    p-value
+------------------------------------ ---------- ---------- ---------- ----------
+Intercept                                -0.000      0.086     -0.000      1.000
+IR     2                                   0.392      0.136      2.876      0.004
+ER     9                                   0.310      0.141      2.202      0.028
+CS    10                                    0.509      0.163      3.116      0.002
+HB      11                                 -0.282      0.098     -2.886      0.004
+IS       12                                 0.578      0.140      4.135      0.000
+EI         13                              -0.559      0.169     -3.310      0.001
+TQI        14                               0.490      0.160      3.056      0.002
+IEGDP      15                               0.393      0.104      3.781      0.000
+HTE          16                            -0.271      0.161     -1.683      0.092
+ITE           17                             -0.066      0.099     -0.666      0.505
+
+Geographically Weighted Regression (GWR) Results
+--------------------------------------------------------------------------------
+Coordinates type:                                                      Spherical
+Spatial kernel:                                                   Fixed gaussian
+Criterion for optimal bandwidth:                                            AICc
+Bandwidth used:                                                         8755.600
+
+Diagnostic Information
+--------------------------------------------------------------------------------
+Residual sum of squares:                                                   8.015
+Effective number of parameters (trace(S)):                                11.117
+Degree of freedom (n - trace(S)):                                         27.883
+Sigma estimate:                                                            0.536
+Log-likelihood:                                                          -24.486
+Degree of Dependency (DoD):                                                0.997
+AIC:                                                                      73.205
+AICc:                                                                     85.485
+BIC:                                                                      93.361
+R2:                                                                        0.794
+Adj. R2:                                                                   0.709
+Adj. alpha (95%):                                                          0.049
+Adj. critical t value (95%):                                               2.029
+
+Summary Statistics For GWR Parameter Estimates
+--------------------------------------------------------------------------------
+Variable                        Mean        STD        Min     Median        Max
+--------------------      ---------- ---------- ---------- ---------- ----------
+Intercept                      0.000      0.001     -0.001      0.000      0.002
+IR                             0.390      0.002      0.388      0.390      0.395
+ER                             0.309      0.001      0.306      0.308      0.313
+CS                             0.508      0.001      0.506      0.507      0.509
+HB                            -0.282      0.002     -0.287     -0.282     -0.278
+IS                             0.577      0.001      0.575      0.577      0.579
+EI                            -0.559      0.002     -0.564     -0.559     -0.555
+TQI                            0.491      0.000      0.490      0.491      0.493
+IEGDP                          0.393      0.000      0.392      0.393      0.394
+HTE                           -0.269      0.001     -0.273     -0.269     -0.266
+ITE                           -0.065      0.002     -0.070     -0.065     -0.061
+================================================================================
+Acknowledgement:
+We acknowledge the support of the National Science Foundation under Award 1758786 
+from the Geography and Spatial Sciences Program to A. S. Fotheringham which 
+enabled this software to be written and made freely available.
+================================================================================
+
